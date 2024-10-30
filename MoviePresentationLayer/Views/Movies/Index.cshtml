@@ -1,0 +1,31 @@
+@model IEnumerable<Movie.API.Models.MovieModel>
+
+<h1>MOVIES</h1>
+
+<!-- Başarı mesajı bölümü -->
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Message"]
+    </div>
+}
+
+
+<div style="margin-bottom: 20px; text-align: right;"> 
+    <a href="@Url.Action("Create", "Movies")" class="btn btn-light add-movie-btn" style="background-color: #909191; color: white;">Add Movie</a>
+</div>
+
+<div class="row">
+    @foreach (var movie in Model)
+    {
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="~/images/default.jpg" class="card-img-top" alt="@movie.Title"> <!-- Varsayılan resim -->
+                <div class="card-body">
+                    <h5 class="card-title">@movie.Title</h5>
+                    <a href="@Url.Action("Details", "Movies", new { id = movie.Id })" class="btn btn-primary">Details</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('../images/movie-background-collage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.hero h1 {
+    font-size: 6rem; /* Büyük boyut için artırılabilir */
+    font-weight: bold;
+    color: white; 
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/movie-background-collage.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    z-index: 0;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.hero h1, .hero a {
+    position: relative;
+    z-index: 1;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #909191;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+
+    .btn:hover {
+        background-color: #474445;
+        color: white;
+    }
+    .card-body {
+        padding-top: 15px; /* Resim ile metin arasında boşluk */
+    }
+    
+
+}
+

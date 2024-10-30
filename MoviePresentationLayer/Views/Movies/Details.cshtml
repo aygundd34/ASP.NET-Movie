@@ -1,0 +1,47 @@
+@model Movie.API.Models.MovieModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Model.Title - Movie Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .dark-btn {
+            background-color: #343a40; /* Koyu gri renk */
+            color: #ffffff; /* Beyaz metin */
+        }
+        .dark-btn:hover {
+            background-color: #495057; /* Daha açık koyu gri */
+            color: #ffffff; /* Metin rengi sabit */
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="mb-0">@Model.Title</h1>
+        <a href="@Url.Action("Edit", "Movies", new { id = Model.Id })" class="btn dark-btn">Edit</a>
+    </div>
+    <img src="~/images/default.jpg" alt="@Model.Title" class="img-fluid mb-4">
+
+    <div class="card">
+        <div class="card-body">
+            <p><strong>Release Date:</strong> @Model.ReleaseDate.ToShortDateString()</p>
+            <p><strong>Genre:</strong> @Model.Genre</p>
+            <p><strong>Price:</strong> @Model.Price.ToString("C2")</p>
+            <p><strong>Rating:</strong> @Model.Rating</p>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <a href="@Url.Action("Delete", "Movies", new { id = Model.Id })" class="btn btn-danger dark-btn" style="margin-right: 10px;">Delete</a>
+        <a href="@Url.Action("Index", "Movies")" class="btn dark-btn">Back to Movies</a>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
