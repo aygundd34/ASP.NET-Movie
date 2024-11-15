@@ -1,25 +1,24 @@
 # 🎥 ASP.NET-Movie Projesi
-Bu proje, **C#** dili ve **ASP.NET Core** framework'ü kullanılarak geliştirilmiş bir film yönetim sistemidir. Sistem, kullanıcıların filmleri eklemesine, listelemesine, düzenlemesine ve silmesine olanak tanır. Her işlem için ayrı modeller kullanılarak esnek ve modüler bir yapı sağlanmıştır.
-----------
+Bu proje, **C#** dili ve **ASP.NET** framework'ü kullanılarak geliştirilmiş bir film yönetim sistemidir. Sistem, kullanıcıların filmleri eklemesine, listelemesine, düzenlemesine ve silmesine olanak tanır. Her işlem için ayrı modeller kullanılarak esnek ve modüler bir yapı sağlanmıştır.
 
 ## 🔍 Özellikler
 
 ### Backend (Arka Uç - ASP.NET Core)
 
 -   **CRUD İşlemleri**: Film ekleme, listeleme, güncelleme ve silme işlemleri desteklenmektedir.
--   **Model Ayrımı**: Her işlem için ayrı modeller (`MovieAddModel`, `MovieListModel`, vb.) kullanılmıştır.
-- **C# Programlama Dili**: Projenin tüm kodlaması C# ile yazılmıştır.
--   **Veritabanı**: **MSSQL** veritabanı kullanılmıştır.
+-   **C# Programlama Dili**: Projenin tüm kodlaması C# ile yazılmıştır.
+-   **Model Ayrımı**: İşlem bazlı modeller (`MovieAddModel`, `MovieListModel`, vb.) ile veri akışı yönetimi yapılmıştır.
+-   **Manuel Veri Haritalama**: AutoMapper kullanılmadan, veriler manuel olarak eşleştirilmiştir.
+-   **Veritabanı Yönetimi**: MSSQL veritabanı ile entegre çalışmaktadır.
 -   **Hata Yönetimi**: API yanıtları için yapılandırılmış hata yönetimi içerir.
 
-### Frontend
+### Frontend (Temel HTML ve CSS)
 
-Projenin ön yüzü, kullanıcıya sadece veritabanındaki bilgileri sunmak ve yönetmek için temel bir **HTML + CSS** yapısıyla geliştirilmiştir.
-
-
+Projenin kullanıcı arayüzü, kullanıcıların filmleri görüntülemesi ve yönetmesi için temel düzeyde bir **HTML ve CSS** yapısı ile oluşturulmuştur. Daha ileri bir görsellik ve etkileşim eklenmemiştir.
 ## 🛠️ Kullanılan Teknolojiler
 
+-   **C#**
 -   **.NET 8**
--   **Entity Framework**
+-   **Entity Framework Core**
 -   **MSSQL**
--   **HTML + CSS** (Temel kullanıcı arayüzü için)
+-   **HTML + CSS**
