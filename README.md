@@ -8,7 +8,6 @@ Bu proje, **C#** dili ve **ASP.NET** framework'ü kullanılarak geliştirilmiş 
 -   **CRUD İşlemleri**: Film ekleme, listeleme, güncelleme ve silme işlemleri desteklenmektedir.
 -   **C# Programlama Dili**: Projenin tüm kodlaması C# ile yazılmıştır.
 -   **Model Ayrımı**: İşlem bazlı modeller (`MovieAddModel`, `MovieListModel`, vb.) ile veri akışı yönetimi yapılmıştır.
--   **Manuel Veri Haritalama**: AutoMapper kullanılmadan, veriler manuel olarak eşleştirilmiştir.
 -   **Veritabanı Yönetimi**: MSSQL veritabanı ile entegre çalışmaktadır.
 -   **Hata Yönetimi**: API yanıtları için yapılandırılmış hata yönetimi içerir.
 
