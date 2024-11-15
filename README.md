@@ -1,7 +1,5 @@
 # 🎥 ASP.NET-Movie Projesi
-
-Bu proje, **ASP.NET Core** kullanılarak geliştirilmiş bir film yönetim sistemidir. Sistem, kullanıcıların filmleri ekleyip listelemesine, düzenlemesine ve silmesine olanak tanır. Projede her işlem için ayrı modeller kullanılarak temiz bir kod yapısı sağlanmıştır.
-
+Bu proje, **C#** dili ve **ASP.NET Core** framework'ü kullanılarak geliştirilmiş bir film yönetim sistemidir. Sistem, kullanıcıların filmleri eklemesine, listelemesine, düzenlemesine ve silmesine olanak tanır. Her işlem için ayrı modeller kullanılarak esnek ve modüler bir yapı sağlanmıştır.
 ----------
 
 ## 🔍 Özellikler
@@ -10,7 +8,7 @@ Bu proje, **ASP.NET Core** kullanılarak geliştirilmiş bir film yönetim siste
 
 -   **CRUD İşlemleri**: Film ekleme, listeleme, güncelleme ve silme işlemleri desteklenmektedir.
 -   **Model Ayrımı**: Her işlem için ayrı modeller (`MovieAddModel`, `MovieListModel`, vb.) kullanılmıştır.
--   **Manuel Haritalama**: AutoMapper gibi araçlar kullanılmamış, manuel haritalama tercih edilmiştir.
+- **C# Programlama Dili**: Projenin tüm kodlaması C# ile yazılmıştır.
 -   **Veritabanı**: **MSSQL** veritabanı kullanılmıştır.
 -   **Hata Yönetimi**: API yanıtları için yapılandırılmış hata yönetimi içerir.
 
