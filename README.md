@@ -19,6 +19,6 @@ Projenin kullanıcı arayüzü, kullanıcıların filmleri görüntülemesi ve y
 
 -   **C#**
 -   **.NET 8**
--   **Entity Framework Core**
+-   **Entity Framework**
 -   **MSSQL**
 -   **HTML + CSS**
