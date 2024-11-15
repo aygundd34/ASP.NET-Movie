@@ -22,6 +22,6 @@ Projenin ön yüzü, kullanıcıya sadece veritabanındaki bilgileri sunmak ve y
 ## 🛠️ Kullanılan Teknolojiler
 
 -   **.NET 8**
--   **Entity Framework Core**
+-   **Entity Framework**
 -   **MSSQL**
 -   **HTML + CSS** (Temel kullanıcı arayüzü için)
